@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sports Supply Store</title>
+
+    <link rel="stylesheet" href="LandingPage.css">    
+    <script src="LandingPage.js"></script>
+
+</head>
+<body>
+<!---->
+  <div class="top-bar">
+    <div class="top-bar-item-left">
+        <img src="logo.jpg" alt="The Sports Supply Store logo" style="width:200px; vertical-align: middle;">
+    </div>
+    <div class="top-bar-item-right">
+        <a href="http://www.scheels.com" target="_blank" title="Check out our catalog!" Shop our catalog!">
+          <img src="catalog.jpg" alt="Sports Supply Store catalog" style="width:50px;">
+        </a>
+        <a href="http://www.scheels.com" target="_blank" title="See your basket and check out!">
+          <img src="ShoppingCart.png" alt="Sports Supply Store Shopping Cart" style="width:50px;">
+        </a>
+        <!--<a href="http://www.scheels.com" target="_blank" title="Login or sign up!"><img src="Login.png" alt="Sports Supply Store login" style="width:50px;"></a>-->
+        <button id="btnLogin" onclick="ShowLogin()" class="submit-button" >Login</button>
+    </div>
+</div>
+
+<div id="divLoginArea" class="content-area" style="display: none;">
+  <div class="separator"></div>
+  <label id="lblUserid" for="inpUserid">Userid</label>
+  <input type="text" id="inpName" class="" required />
+  <br>
+  <label id="lblPassword" for="inpPassword">Password</label>
+  <input type="password" id="inpPassword" class="" required />
+  <button type="submit" id="LoginSubmit" class="submit-button">Submit</button>
+</div>
+
+
+<div class="separator"></div>
+
+<div class="content-area">
+  <div class="content-area-item">
+      <br />
+      <p><h1 style="color:blue;">Sport</h1><h1 style="color: darkgreen">Supply</h1>  <h1 style="color: red;">Store</h1></p>
+      <p><h3><em>Your top source for All Sports!</em></h3></p>
+      <p><a href="http://www.scheels.com" target="_blank" title="Shop our catalog!" >
+      <br />
+      <p><img src="catalog.png" alt="Shop out Sports Supply Store catalog" style="width:50px;"></a></p>
+
+  </div>
+  <div class="content-area-item">
+      <p><h1>Team Sports</h1></p>
+      <a href="https://www.scheels.com/cp/team-sports" target="_blank" title="Team Sports Supplies"><img src="MultiSportsBalls.jpg".jpg" alt="Supplies for Team Sports" style="width:50%;"></a>
+  </div>
+  <div class="content-area-item">
+      <p><h1>Shoes</h1></p>
+      <a href="https://www.scheels.com/c/shoes/men" target="_blank" title="Athletic Shoes"><img src="shoe.jpg" alt="Shoes for any type of sport or exercise" style="width:50%;"></a>
+  </div>
+  <div class="content-area-item">
+      <p><h1>Bicycles</h1></p>
+      <a href="https://www.scheels.com/c/cycling" target="_blank" title="Bicycles"><img src="Bicycle.jpg" alt="Bicycles and Accessories" style="width:50%;"></a>
+
+  </div>
+  <div class="content-area-item">
+    <p><h1>Fishing</h1></p>
+    <a href="https://www.scheels.com/c/fishing" target="_blank" title="Bicycles"><img src="fishingpole.jpg" alt="Fishing Poles and Equipment" style="width:50%;"></a>
+  </div>
+</div>
+
+<!--<div class="separator"></div>-->
+
+</body>

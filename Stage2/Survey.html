@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Preference Survey</title>
+
+    <link rel="stylesheet" href="Survey.css">
+    <script src="survey.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Food Preference Survey</h1>
+        <p>Thank you for taking this survey on food preferences</p>
+    </header>
+    <form id="foodprefsurvey-form" onsubmit="submitForm()">
+    
+        <div class="question_area">
+            <label id="lblName" for="inpName">Please enter your name</label>
+            <input type="text" 
+                id="inpName" 
+                name="inpName" 
+                placeholder="Last, First" 
+                class=""
+                required
+            />
+        </div>
+        <div class="question-area">
+            <label id="lblFavoriteMeal" for="ddlFavoriteMeal">What is your favorite meal of the day?</label>
+            <select id="ddlFavoriteMeal" name="ddlFavoriteMeal"  required>
+                <option disabled selected value>Select your favorite meal of the day</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="supper">Supper (aka Dinner)</option>
+                <option value="snacking">Snacks</option>
+                <option value="other">Other</option>
+              </select>  
+        </div>
+        <div class="question-area">
+            <label id="lblFavoriteCondiments" >What are some of your favorite condiments?</label>
+            <br>
+            <label>
+                <input
+                    name="fave-condiments"
+                    value="ketchup"
+                    type="checkbox"
+                    class="input-checkbox"
+                    
+                />Ketchup
+            </label>
+            <label>
+                <input
+                    name="fave-condiments"
+                    value="mustard"
+                    type="checkbox"
+                    class="input-checkbox"
+                    
+                />Mustard
+            </label>
+            <label>
+                <input
+                    name="fave-condiments"
+                    value="mayonnaise"
+                    type="checkbox"
+                    class="input-checkbox"
+                    
+                />Mayonnaise
+            </label>
+            <label>
+            <input
+                    name="fave-condiments"
+                    value="salsa"
+                    type="checkbox"
+                    class="input-checkbox"
+                    
+                />Salsa
+            </label>
+            <label>
+            <input
+                    name="fave-condiments"
+                    value="bbq"
+                    type="checkbox"
+                    class="input-checkbox"
+                    
+                />BBQ Sauce
+            </label>
+            <label>
+                <input
+                    name="fave-condiments"
+                    value="other"
+                    type="checkbox"
+                    class="input-checkbox"
+                    
+                />Other           
+            </label>
+    </div>
+        <div class="question-area">
+            <label id="lblTimeOfFirstMeal" >When do you eat your first meal of the day?</label>
+            <br>
+            <label>
+                <input
+                    name="time-of-first-meal"
+                    value="before8am"
+                    type="radio"
+                    class="input-radio"
+                />Before 8:00 am
+            </label>
+            <label>
+                <input
+                    name="time-of-first-meal"
+                    value="between8andNoon"
+                    type="radio"
+                    class="input-radio"
+                />Between 8:00 am and 12 Noon            
+            </label>
+            <label>
+                <input
+                    name="time-of-first-meal"
+                    value="betweenNoonand5pm"
+                    type="radio"
+                    class="input-radio"
+                />Between 12 Noon and 5:00 pm            
+            </label>
+            <label>
+                <input
+                    name="time-of-first-meal"
+                    value="After5pm"
+                    type="radio"
+                    class="input-radio"
+                />After 5:00 pm            
+            </label>
+        </div>
+        <div class="question-area">
+            <label id="lblPerfectMeal" >Describe your perfect meal:</label>
+            <br>
+            <textarea
+              id="perfectMeal"
+              class="input-textarea"
+              name="perfectMeal"
+              placeholder="Describe your perfect meal here..."
+            ></textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+      
+    </form>
+    
+</body>
+
+</html>
