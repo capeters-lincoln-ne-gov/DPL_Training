@@ -26,17 +26,32 @@ function validateANDadd() {
            var tableRef = document.getElementById("table2");
            (tableRef.insertRow(tableRef.rows.length)).innerHTML = document.forms["myForm"]["newWord"].value + ': ' + PalindromeCheck2(theNewWord);;}
         // erase the form fields
-        document.forms["myForm"]["newWord"].value = "";
-        document.forms["myForm"]["newNumber"].value = "";
+        resetInput()
+        // document.forms["myForm"]["newWord"].value = "";
+        // document.forms["myForm"]["newNumber"].value = "";
+        // document.forms["myForm"]["newWord"].focus();
+        // document.getElementById("newNumber")
         return true;
     }
   }
 
+  function resetInput(){
+    document.forms["myForm"]["newWord"].value = "";
+    document.forms["myForm"]["newWord"].focus();
+    document.forms["myForm"]["newNumber"].value = "";
+
+    var rbl = document.getElementsByName("newNumber");
+    // for (i=0; i < rbl.item.length; i++){
+    //   rbl.item(i).cheked = false; 
+    // }
+    rbl.item(0).checked = false;
+    rbl.item(1).checked = false;
+}
   function clearList1() {
     // clear the table of all rows
     var tableRef = document.getElementById("table1");
     tableRef.innerHTML = " ";
-    document.getElementById("newWord").autofocus
+    document.getElementById("newWord").focus()
 
   }
 
@@ -44,7 +59,7 @@ function validateANDadd() {
     // clear the table of all rows
     var tableRef = document.getElementById("table2");
     tableRef.innerHTML = " ";
-    document.getElementById("newWord").autofocus
+    document.getElementById("newWord").focus()
   }
 
   function PalindromeCheck1 (theword){
