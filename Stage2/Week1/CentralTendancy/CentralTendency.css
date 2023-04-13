@@ -24,3 +24,7 @@
       flex-direction: column;
     }
   }
+  .textInput {
+    width: 5rem;
+    
+  }
