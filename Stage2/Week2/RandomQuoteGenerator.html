@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Exercise - Javascript Sampling</title>
+
+    <link rel="stylesheet" href="RandomQuoteGenerator.css">
+    <script src="RandomQuoteGenerator.js"></script>
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <div style="text-align: center;">
+        <label for="newLength">How long of a quote do you want?</label>
+        <select id="newLength">
+            <option value=1>Short</option>
+            <option value=2>Medium</option>
+            <option value=3>Long </option>
+        </select>
+        <br />
+        <input type="button" value="Get random quote" onclick="getRandomQuote()" class="submitbtn">
+    </div>
+    <hr>
+    <p id="theRandomQuote" class="theQuote" ></p>
+    <p id="theAuthor" class="theAuthor" ></p>
+</body>
+</html>
