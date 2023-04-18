@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 2/Week 1 Competency Challenge</title>
+
+    <link rel="stylesheet" href="AddUpdateDel.css">
+    <script src="AddUpdateDel.js"></script>
+</head>
+<body>
+    <h1>Stage 2 / Week 1 Competency Challenge</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>Enter the items of your To-Do list</h2>
+            <form name="myForm">
+                <p id="itemPrompt">Enter a to-do item:</p> 
+                <input id="txtNewToDo" type="text" name="newToDo" value="" class="textInput">
+                <input id="btnAdd" type="button" value="Add To-Do Item" onclick="addToDoItem()">
+            </form>
+            <br /> <br />
+            <div class = "text-align-left" id="buttonArea" style="visibility:visible;">
+                <input id="btnMarkComplete" type="button" value="Mark Completed" onclick="completeRow()" class="red-shading">
+                <input id="btnDeleteChecked" type="button" value="Delete Checked Rows" onclick="deleteRow()" class="green-shading">
+            </div>
+        <!-- </div>
+        <div class="myflexboxColumn"> -->
+            <h2>Items entered so far:</h2>
+            <table id="tblToDoList">
+                <!-- <tr>
+                    <td><input type="checkbox" name="cbIsCompleted"></td>
+                    <td><label name="lblToDoItem" ></label></td>
+                    <td><label name="lblCompleted" ></label></td>
+                </tr> -->
+            </table>
+        </div>
+    </div>    
+</body>
+</html>

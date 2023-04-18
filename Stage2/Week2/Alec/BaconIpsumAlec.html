@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Exercise - Javascript Sampling</title>
+
+    <link rel="stylesheet" href="BaconIpsumAlec.css">
+    <script src="BaconIpsumAlec.js"></script>
+</head>
+<body>
+    <h1>Bacon Ipsum Web Service API </h1>
+    <!-- <div class="XmyflexboxRow"> -->
+        <!-- <div class="XmyflexboxColumn"> -->
+            <h2>Obtain user information</h2>
+            <label for="newParagraphs">How many paragraphs?</label>
+            <select id="newParagraphs">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select>
+            <br />
+            <label for="newParagraphs">Meat Type:</label>
+            <input type="radio" name="rbMeatType" value="all-meat">All Meat
+            <input type="radio" name="rbMeatType" value="meat-and-filler">Meat and Filler
+            <br />
+            <input type="button" value="Get my Bacon Ipsum text!" onclick="getBaconipsum()">
+        <!-- </div> -->
+        <hr>
+        <h2>Raw JSON Data</h2>
+        <div class="rawJSONText">
+            <!-- <p id="myRawData"></p> -->
+            <label id="myRawData"></label>
+        </div>
+        <hr>
+        <h2>Formatted Paragraphs</h2>
+        <div class="formattedText">
+            <!-- <p id="myFormattedData"></p> -->
+            <label id="myFormattedData"></label>
+        </div>
+    <!-- </div>     -->
+</body>
+</html>
