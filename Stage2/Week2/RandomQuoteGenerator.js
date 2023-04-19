@@ -13,8 +13,8 @@ async function getRandomQuote() {
          maxLength = 250;}
     else // the user wants a long one
         minLength = 250;
-
-    apiString = apiString + "?minLength=" + minLength + "&maxLength=" + maxLength;
+    var newTag = document.getElementById("txtNewTag").value
+    apiString = apiString + "?minLength=" + minLength + "&maxLength=" + maxLength + "&tags=" + newTag;
 
     //alert(apiString);
   

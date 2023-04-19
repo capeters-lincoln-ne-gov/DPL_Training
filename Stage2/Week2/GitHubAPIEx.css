@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(197, 240, 233);
+}
+
+hr {
+    height: 5px;
+    background-color: darkgray;
+}
+
+a {
+    font-size:xx-large;
+}
+
+.submitbtn {
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(172, 241, 172);
+    border-radius: 15px;
+    height: 75px;
+    box-shadow:5px 5px darkgreen; 
+}
+
+.theQuote {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: x-large;
+}
+
+.theAuthor{
+    font-style: italic; 
+    font-weight: bold;
+    font-size: large;
+}

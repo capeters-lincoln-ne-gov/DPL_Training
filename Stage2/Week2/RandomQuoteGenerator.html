@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Exercise - Javascript Sampling</title>
+    <title>Random Quote Generator API Exercise</title>
 
     <link rel="stylesheet" href="RandomQuoteGenerator.css">
     <script src="RandomQuoteGenerator.js"></script>
@@ -11,6 +11,9 @@
 <body onload="getRandomQuote()">
     <h1>Random Quote Generator</h1>
     <div style="text-align: center;">
+        <label for="txtNewTag">What is your topic?</label>
+        <input type="text" id="txtNewTag" maxlength="20">
+        <br>
         <label for="newLength">How long of a quote do you want?</label>
         <select id="newLength">
             <option value=1>Short</option>

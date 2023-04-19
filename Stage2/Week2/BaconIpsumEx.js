@@ -6,7 +6,7 @@ async function getBaconipsum() {
   var theMeatType = document.getElementsByName("rbMeatType").value;
   //apiString = apiString + "?type=all-meat&paras=" + theNewParagraphs;
   apiString = apiString + "?type=" + theMeatType + "&paras=" + theNewParagraphs;
-  alert(apiString);  // show the API string
+  //alert(apiString);  // show the API string
 
   // now make the API call to the web service using the string and store what is returned in response
   // fetch is a javascript API call.   await tells javascript to wait until you get the response  from the API

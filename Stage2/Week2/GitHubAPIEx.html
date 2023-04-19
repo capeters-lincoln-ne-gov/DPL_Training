@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator API Exercise</title>
+
+    <link rel="stylesheet" href="GitHubAPIEx.css">
+    <script src="GitHubAPIEx.js"></script>
+</head>
+<body onload="getRandomQuote()">
+    <h1>GitHub API Repository finder</h1>
+    <div style="text-align: center;">
+        <label for="txtUser">What Repo are you searching for?</label>
+        <input type="text" id="txtUser" maxlength="50">
+        <br />
+        <input type="button" value="Find Repos" onclick="getRepos()" class="submitbtn">
+    </div>
+    <hr>
+    <h2>Repo List for <label id="lblUser"></label></h1>
+    <p id="theRepos"></p>
+</body>
+</html>
