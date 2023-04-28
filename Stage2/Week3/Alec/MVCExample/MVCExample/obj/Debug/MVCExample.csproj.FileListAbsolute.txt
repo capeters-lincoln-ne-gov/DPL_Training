@@ -1,0 +1,7 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MVCExample\bin\Debug\MVCExample.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\MVCExample\MVCExample\bin\Debug\MVCExample.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\MVCExample\MVCExample\bin\Debug\MVCExample.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\MVCExample\MVCExample\bin\Debug\MVCExample.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\MVCExample\MVCExample\obj\Debug\MVCExample.csprojResolveAssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\MVCExample\MVCExample\obj\Debug\MVCExample.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\MVCExample\MVCExample\obj\Debug\MVCExample.pdb

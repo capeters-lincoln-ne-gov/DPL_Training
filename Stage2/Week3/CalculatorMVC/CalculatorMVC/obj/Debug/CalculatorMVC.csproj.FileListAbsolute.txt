@@ -1,0 +1,7 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\CalculatorMVC\bin\Debug\CalculatorMVC.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\bin\Debug\CalculatorMVC.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\bin\Debug\CalculatorMVC.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\bin\Debug\CalculatorMVC.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.csprojResolveAssemblyReference.cache

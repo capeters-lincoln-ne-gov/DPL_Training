@@ -1,0 +1,6 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\bin\Debug\SportsInterfaceAndDI.exe.config
+C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\bin\Debug\SportsInterfaceAndDI.exe
+C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\bin\Debug\SportsInterfaceAndDI.pdb
+C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.exe
+C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.pdb
+C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.csprojResolveAssemblyReference.cache

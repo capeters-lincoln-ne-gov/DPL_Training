@@ -1,0 +1,12 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\InterfaceAndDI\bin\Debug\InterfaceAndDI.exe.config
+C:\Users\dpdcap\AppData\Local\Temporary Projects\InterfaceAndDI\bin\Debug\InterfaceAndDI.exe
+C:\Users\dpdcap\AppData\Local\Temporary Projects\InterfaceAndDI\bin\Debug\InterfaceAndDI.pdb
+C:\Users\dpdcap\AppData\Local\Temporary Projects\InterfaceAndDI\obj\Debug\InterfaceAndDI.csprojResolveAssemblyReference.cache
+C:\Users\dpdcap\AppData\Local\Temporary Projects\InterfaceAndDI\obj\Debug\InterfaceAndDI.exe
+C:\Users\dpdcap\AppData\Local\Temporary Projects\InterfaceAndDI\obj\Debug\InterfaceAndDI.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\InterfaceAndDI\InterfaceAndDI\bin\Debug\InterfaceAndDI.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\InterfaceAndDI\InterfaceAndDI\obj\Debug\InterfaceAndDI.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\InterfaceAndDI\InterfaceAndDI\obj\Debug\InterfaceAndDI.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\InterfaceAndDI\InterfaceAndDI\bin\Debug\InterfaceAndDI.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\InterfaceAndDI\InterfaceAndDI\bin\Debug\InterfaceAndDI.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Alec\InterfaceAndDI\InterfaceAndDI\obj\Debug\InterfaceAndDI.csprojResolveAssemblyReference.cache

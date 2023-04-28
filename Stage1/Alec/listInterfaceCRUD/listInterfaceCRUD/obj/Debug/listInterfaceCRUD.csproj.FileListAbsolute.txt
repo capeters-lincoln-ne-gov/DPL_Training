@@ -1,0 +1,2 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\listInterfaceCRUD\bin\Debug\listInterfaceCRUD.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage1\Alec\listInterfaceCRUD\listInterfaceCRUD\bin\Debug\listInterfaceCRUD.exe.config

@@ -1,0 +1,6 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollectionMVC\bin\Debug\MyCollectionMVC.exe.config
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollectionMVC\bin\Debug\MyCollectionMVC.exe
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollectionMVC\bin\Debug\MyCollectionMVC.pdb
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollectionMVC\obj\Debug\MyCollectionMVC.csprojResolveAssemblyReference.cache
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollectionMVC\obj\Debug\MyCollectionMVC.exe
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollectionMVC\obj\Debug\MyCollectionMVC.pdb

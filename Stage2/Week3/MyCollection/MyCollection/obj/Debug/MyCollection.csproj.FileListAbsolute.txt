@@ -1,0 +1,7 @@
+C:\Users\dpdcap\AppData\Local\Temporary Projects\MyCollection\bin\Debug\MyCollection.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\MyCollection\MyCollection\bin\Debug\MyCollection.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\MyCollection\MyCollection\bin\Debug\MyCollection.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\MyCollection\MyCollection\bin\Debug\MyCollection.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\MyCollection\MyCollection\obj\Debug\MyCollection.csprojResolveAssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\MyCollection\MyCollection\obj\Debug\MyCollection.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\MyCollection\MyCollection\obj\Debug\MyCollection.pdb
