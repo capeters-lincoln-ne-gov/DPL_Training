@@ -18,9 +18,9 @@ namespace MyCollectionMVC
             cModel = new MyCollectionModel();
 
             myColl.Make = cView.GetStringInfo("make");
-            myColl.Make = cView.GetStringInfo("make");
-            myColl.Make = cView.GetStringInfo("make");
-            myColl.Make = cView.GetStringInfo("make");
+            myColl.Model = cView.GetStringInfo("model");
+            myColl.Color = cView.GetStringInfo("color");
+            myColl.Year =  cView.GetIntInfo("year");
 
         }
 

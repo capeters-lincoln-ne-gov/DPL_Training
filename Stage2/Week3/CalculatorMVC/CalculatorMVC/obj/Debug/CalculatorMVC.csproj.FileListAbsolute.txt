@@ -4,4 +4,6 @@ C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Tr
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\bin\Debug\CalculatorMVC.pdb
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.exe
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.pdb
-C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.csprojResolveAssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.csproj.AssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.csproj.SuggestedBindingRedirects.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CalculatorMVC\CalculatorMVC\obj\Debug\CalculatorMVC.csproj.CoreCompileInputs.cache

@@ -9,14 +9,14 @@ namespace CalculatorMVC
     class CalcController
     {
         private CalcView cView;
-        private calcModel cModel;
-        calcModel myCalc = new calcModel();
+        private CalcModel cModel;
+        CalcModel myCalc = new CalcModel();
         public CalcController()
         {
             
 
             cView = new CalcView();
-            cModel = new calcModel();
+            cModel = new CalcModel();
 
             myCalc.Num1 = cView.GetUserNumber(1);
             myCalc.Num2 = cView.GetUserNumber(2);

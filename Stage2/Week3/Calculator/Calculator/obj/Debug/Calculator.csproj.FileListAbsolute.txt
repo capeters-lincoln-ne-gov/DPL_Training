@@ -2,6 +2,8 @@ C:\Users\dpdcap\AppData\Local\Temporary Projects\Calculator\bin\Debug\Calculator
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\bin\Debug\Calculator.exe.config
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\bin\Debug\Calculator.exe
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\bin\Debug\Calculator.pdb
-C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache

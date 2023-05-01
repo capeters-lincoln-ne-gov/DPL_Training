@@ -11,7 +11,7 @@ namespace CalculatorMVC
 
         static void Main(string[] args)
         {
-            //calcModel myCalc = new calcModel();
+            //CalcModel myCalc = new CalcModel();
             bool keepGoing = true;
             while (keepGoing)
             {

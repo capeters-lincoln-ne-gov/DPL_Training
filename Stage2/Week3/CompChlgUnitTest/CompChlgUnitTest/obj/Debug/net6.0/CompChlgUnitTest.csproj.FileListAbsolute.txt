@@ -1,0 +1,15 @@
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\bin\Debug\net6.0\CompChlgUnitTest.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\bin\Debug\net6.0\CompChlgUnitTest.deps.json
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\bin\Debug\net6.0\CompChlgUnitTest.runtimeconfig.json
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\bin\Debug\net6.0\CompChlgUnitTest.dll
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\bin\Debug\net6.0\CompChlgUnitTest.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.csproj.AssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.AssemblyInfoInputs.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.AssemblyInfo.cs
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.dll
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\refint\CompChlgUnitTest.dll
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\CompChlgUnitTest.genruntimeconfig.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\CompChlgUnitTest\CompChlgUnitTest\obj\Debug\net6.0\ref\CompChlgUnitTest.dll

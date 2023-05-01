@@ -4,3 +4,11 @@ C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\bin\Debug\
 C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.exe
 C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.pdb
 C:\Users\dpdcap\AppData\Local\Temporary Projects\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.csprojResolveAssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\bin\Debug\SportsInterfaceAndDI.exe.config
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\bin\Debug\SportsInterfaceAndDI.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\bin\Debug\SportsInterfaceAndDI.pdb
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.csproj.AssemblyReference.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.csproj.SuggestedBindingRedirects.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.csproj.CoreCompileInputs.cache
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.exe
+C:\Users\dpdcap\OneDrive - Information Services - City of Lincoln\Desktop\DPL_Training\Stage2\Week3\SportsInterfaceAndDI\SportsInterfaceAndDI\obj\Debug\SportsInterfaceAndDI.pdb

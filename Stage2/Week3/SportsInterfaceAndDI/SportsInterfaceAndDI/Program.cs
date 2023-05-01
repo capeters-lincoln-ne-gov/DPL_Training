@@ -38,6 +38,7 @@ namespace SportsInterfaceAndDI
 
             ProductService productService1 = new ProductService(sportStuff);
             productService1.Sport(sportName, season, environment);
+
             //Console.ReadLine();
         }
     }
