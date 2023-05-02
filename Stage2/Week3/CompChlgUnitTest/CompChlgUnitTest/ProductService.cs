@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompChlgUnitTest
+namespace CompChlg
 {
     public class ProductService
     {
@@ -15,9 +15,9 @@ namespace CompChlgUnitTest
             _stadium = stadium;
         }
 
-        public void Stadium (string stadiumName)
+        public void Stadium (string stadiumName, string tixSoldX)
         {
-            _stadium.Stadium(stadiumName);
+            _stadium.Stadium(stadiumName, tixSoldX);
         }
     }
 }

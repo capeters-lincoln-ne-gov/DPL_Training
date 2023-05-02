@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompChlgUnitTest
+namespace CompChlg
 {
     public interface IStadium
     {
-        void Stadium(string stadiumName);
+        void Stadium(string stadiumName, string tixSoldX);
     }
 }

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week3\\CompChlgUnitTest\\CompChlgUnitTest\\CompChlgUnitTest.csproj",
-      "projectName": "CompChlgUnitTest",
-      "projectPath": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week3\\CompChlgUnitTest\\CompChlgUnitTest\\CompChlgUnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week3\\CompChlgUnitTest\\CompChlgUnitTest\\CompChlg.csproj",
+      "projectName": "CompChlg",
+      "projectPath": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week3\\CompChlgUnitTest\\CompChlgUnitTest\\CompChlg.csproj",
       "packagesPath": "C:\\Users\\dpdcap\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week3\\CompChlgUnitTest\\CompChlgUnitTest\\obj\\",
       "projectStyle": "PackageReference",
