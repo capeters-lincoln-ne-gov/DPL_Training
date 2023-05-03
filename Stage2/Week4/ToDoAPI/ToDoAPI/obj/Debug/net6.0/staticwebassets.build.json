@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "ugchlZVWduwsQJ1lyAT8pagDEt/mVoLnN9Q11aOCJ5Y=",
+  "Hash": "46qlR9ls1JJCHL369lOb3uAPUOQ+VSSZfjEUcPQ5LV8=",
   "Source": "ToDoAPI",
   "BasePath": "_content/ToDoAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ToDoAPI\\wwwroot",
+      "Source": "ToDoAPI",
+      "ContentRoot": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\",
+      "BasePath": "_content/ToDoAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\css\\site.css",
+      "SourceId": "ToDoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\",
+      "BasePath": "_content/ToDoAPI",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\index.html",
+      "SourceId": "ToDoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\",
+      "BasePath": "_content/ToDoAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\js\\site.js",
+      "SourceId": "ToDoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week4\\ToDoAPI\\ToDoAPI\\wwwroot\\",
+      "BasePath": "_content/ToDoAPI",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
 }

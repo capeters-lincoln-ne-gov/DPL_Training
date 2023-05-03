@@ -9,7 +9,8 @@ namespace TodoApi.Controllers
     [ApiController]
     public class TodoItemsController : ControllerBase
     {
-        private readonly TodoContext _context;
+        //??private readonly TodoContext _context;
+        public readonly TodoContext _context;   //?
 
         public TodoItemsController(TodoContext context)
         {
@@ -56,6 +57,11 @@ namespace TodoApi.Controllers
 
             todoItem.Name = todoItemDTO.Name;
             todoItem.IsComplete = todoItemDTO.IsComplete;
+            //------------ new fields ----------
+            todoItem.DueDate = todoItemDTO.DueDate;
+            todoItem.Location = todoItemDTO.Location;
+            todoItem.Duration = todoItemDTO.Duration;
+            //----------------------------------
 
             try
             {
@@ -76,7 +82,12 @@ namespace TodoApi.Controllers
             var todoItem = new TodoItem
             {
                 IsComplete = todoItemDTO.IsComplete,
-                Name = todoItemDTO.Name
+                Name = todoItemDTO.Name,
+                //-------- new fields --------
+                DueDate = todoItemDTO.DueDate,
+                Location = todoItemDTO.Location,
+                Duration = todoItemDTO.Duration
+                //----------------------------
             };
 
             _context.TodoItems.Add(todoItem);
@@ -115,7 +126,12 @@ namespace TodoApi.Controllers
             {
                 Id = todoItem.Id,
                 Name = todoItem.Name,
-                IsComplete = todoItem.IsComplete
+                IsComplete = todoItem.IsComplete,
+                //------- new fields -----------------
+                DueDate = todoItem.DueDate,
+                Location = todoItem.Location,
+                Duration = todoItem.Duration
+                //------------------------------------
             };
     }
 }

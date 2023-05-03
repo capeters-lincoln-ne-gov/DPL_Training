@@ -26,6 +26,10 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Run in Browser": {
+      "commandName": "Project",
+      "launchBrowser": true
     }
   }
 }
