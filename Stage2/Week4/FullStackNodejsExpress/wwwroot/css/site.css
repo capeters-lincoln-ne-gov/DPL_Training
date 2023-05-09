@@ -1,0 +1,36 @@
+body { background-color: #f12345;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h1 {text-align: center;
+
+}
+input[type='submit'], button, [aria-label] {
+    cursor: pointer;
+}
+
+#editForm {
+    display: none;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: darkgray;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid;
+    padding: 5px;
+    background-color: lightgray
+}
+.datetime   {
+    width: 8rem;
+}
+.broadcast{
+    width: 4rem;
+}

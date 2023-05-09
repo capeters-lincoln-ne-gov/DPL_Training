@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <h1>Game Schedule</h1>
+    <h3>Add Game</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-opponent" placeholder="Opponent">
+        <input type="text" id="add-gameDate" placeholder="Game Date" class="datetime">
+        <input type="text" id="add-gameTime" placeholder="Game Time" class="datetime" >
+        <input type="text" id="add-location" placeholder="Location">
+        <input type="text" id="add-broadcast" placeholder="Broadcast" class="broadcast">
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit Game</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-opponent">
+            <input type="text" id="edit-gameDate" class="datetime">
+            <input type="text" id="edit-gameTime" class="datetime">
+            <input type="text" id="edit-location">
+            <input type="text" id="edit-broadcast" class="broadcast">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Opponent</th>
+            <th>Game Date</th>
+            <th>Game Time</th>
+            <th>Location</th>
+            <th>Broadcast</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">getItems()</script>
+</body>
+</html>
