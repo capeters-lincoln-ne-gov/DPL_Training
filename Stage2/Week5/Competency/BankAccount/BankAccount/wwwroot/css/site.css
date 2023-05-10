@@ -29,7 +29,13 @@ th {
 td {
     border: 1px solid;
     padding: 5px;
-    background-color: antiquewhite;
+    //background-color: antiquewhite;
+}
+.tdErr {
+    background-color: lightpink;
+}
+.tdOkay {
+    background-color:antiquewhite;
 }
 
 

@@ -9,18 +9,60 @@ function getItems() {
 }
 
 function addItem() {
+
+    
+    
+    currBalance = parseFloat(document.getElementById("currBalance").innerHTML);
     const addCheckNumTextbox = document.getElementById('add-checkNum');
     const addTrandDateTextbox = document.getElementById('add-tranDate');
     const addDescriptionTextbox = document.getElementById('add-description');
     const addAmountTextbox = document.getElementById('add-amount');
     const addTranTypeDropDown = document.getElementById('add-tranType');
+    var tranType = addTranTypeDropDown.value.toLowerCase()
+     
+    if (!validateCheckNum(parseInt(addCheckNumTextbox.value), tranType )) {
+        addCheckNumTextbox.className = "tdErr";
+        alert("Check Numbers must be for withdrawls, and can only be non-negative whole numbers!");
+        return false;
+    }
+
+    if (!validateTranDate(addTrandDateTextbox.value)) {
+        addTrandDateTextbox.className = "tdErr";
+        alert("Please enter a transaction date!");
+        return false;
+    }
+
+    if (!validateDescription(addDescriptionTextbox.value)) {
+        addDescriptionTextbox.className = "tdErr";
+        alert("Please enter a description!");
+        return false;
+    }
+
+    if (!validateAmount(addAmountTextbox.value, tranType, currBalance)){
+        addAmountTextbox.className = "tdErr";
+        alert("Please enter a non-negative amount.  Withdrawls must be for less than the current balance!");
+        return false;
+    }
+
+    if (!validateTranType(addTranTypeDropDown.value)) {
+            addTranTypeDropDown.className = "tdErr";
+            alert("Please select a Transaction Type!");
+            return false;
+    }
+    
+
+    var cNum = 0;
+    if (addCheckNumTextbox.value > "") {
+        cNum = addCheckNumTextbox.value        
+    }
     // ---------------------------------------------------------------------------------------------------------
     // *   see https://stackoverflow.com/questions/1085801/get-selected-value-in-dropdown-list-using-javascript 
     // *var ttValue = addTranTypeDropDown.value;
     // *var ttText = ttValue.options[ttValue.selectedIndex].text;
     // ---------------------------------------------------------------------------------------------------------
     const item = {
-        checkNum: addCheckNumTextbox.value,
+        //checkNum: addCheckNumTextbox.value,
+        checkNum: cNum,
         tranDate: addTrandDateTextbox.value,
         description: addDescriptionTextbox.value.trim(),
         amount: parseFloat(addAmountTextbox.value),
@@ -38,13 +80,19 @@ function addItem() {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addNameTextbox.value = '';
+            addCheckNumTextbox.value = ''
+            addTrandDateTextbox.value = ''
+            addDescriptionTextbox.value = ''
+            addAmountTextbox.value = ''
+            addTranTypeDropDown.selecteIndex = 0
         })
         .catch(error => console.error('Unable to add item.', error));
 }
 
 
 function deleteItem(id) {
+    if (!confirm('Are you sure you want to delete this row?')) return false;
+
     fetch(`${uri}/${id}`, {
         method: 'DELETE'
     })
@@ -96,9 +144,80 @@ function closeInput() {
     document.getElementById('editForm').style.display = 'none';
 }
 
+
+
+
+
+//============= Data Validation =======================================================
+function validateCheckNum(checkNum, tranType) {
+    if (parseInt(checkNum) < 0) {
+        return false;
+    }
+    else if (tranType == "withdrawl") {
+        return true;
+    }
+    else if (parseInt(checkNum) > 0) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function validateTranDate(tranDate) {
+    if (tranDate == "") {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function validateDescription(Description) {
+    if (Description == "") {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function validateAmount(Amount, tranType, currBalance) {
+    if (Amount == "") {
+        return false;
+    }
+    else if (parseFloat(Amount) < 0) {
+        return false;
+    }
+    else if (tranType == "withdrawl") {
+        if (parseFloat(Amount) > parseFloat(currBalance)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    else {
+        return true;
+    }
+
+}
+
+function validateTranType(tranType) {
+    if (tranType == "") {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+//========= End of Validation ===========================================================
+
+
 function _displayCount(itemCount, totAmount) {
     const name = (itemCount === 1) ? 'entry' : 'entries';
-    document.getElementById('counter').innerText = `${itemCount} ${name} - Account Balance is ${totAmount} `;
+    document.getElementById('counterLit').innerText = `${itemCount} ${name} - Account Balance is `;
+    document.getElementById('currBalance').innerText = totAmount;
 }
 
 function _displayItems(data) {
@@ -119,11 +238,6 @@ function _displayItems(data) {
     });
 
     data.forEach(item => {
-        //let isCompleteCheckbox = document.createElement('input');
-        //isCompleteCheckbox.type = 'checkbox';
-        //isCompleteCheckbox.disabled = true;
-        //isCompleteCheckbox.checked = item.isComplete;
-
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
         editButton.setAttribute('onclick', `displayEditForm(${item.id})`);
@@ -136,19 +250,23 @@ function _displayItems(data) {
 
         let td0 = tr.insertCell(0)
         let textCheckNum = document.createTextNode(item.checkNum)
+        td0.setAttribute("class", "tdOkay");
         td0.appendChild(textCheckNum)
 
         let td1 = tr.insertCell(1);
         let textTranDate = document.createTextNode(item.tranDate);
+        td1.setAttribute("class", "tdOkay");
         td1.appendChild(textTranDate);
 
         let td2 = tr.insertCell(2);
         let textDescription = document.createTextNode(item.description);
+        td2.setAttribute("class", "tdOkay");
         td2.appendChild(textDescription);
 
         let td3 = tr.insertCell(3);
         let textAmount = document.createTextNode(formatter.format(item.amount));
         /*let textAmount = formatter.format(item.amount);*/
+        td3.setAttribute("class", "tdOkay");
         td3.appendChild(textAmount);
         if (item.tranType == "Withdrawl") {
             totAmount += (item.amount * -1);
@@ -159,12 +277,15 @@ function _displayItems(data) {
 
         let td4 = tr.insertCell(4);
         let textTranType = document.createTextNode(item.tranType);
+        td4.setAttribute("class", "tdOkay");
         td4.appendChild(textTranType);
 
         let td5 = tr.insertCell(5);
+        td5.setAttribute("class", "tdOkay");
         td5.appendChild(editButton);
 
         let td6 = tr.insertCell(6);
+        td6.setAttribute("class", "tdOkay");
         td6.appendChild(deleteButton);
     });
 

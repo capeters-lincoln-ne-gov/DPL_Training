@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-    <h1>Bank Account Entries</h1>
+    <h1><img src="bank.jpg" />
+        <p>
+            Bank Account Entries
+        </p>
+    </h1>
+    
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
         <table>
@@ -23,26 +28,26 @@
             <tbody>
                 <tr>
                     <td>
-                        <input type="number" id="add-checkNum" placeholder="999" style="width: 4rem;">
+                        <input type="number" id="add-checkNum" placeholder="999" style="width: 4rem;" min="0" class="tdOkay" >
                     </td>
                     <td>
-                        <input type="date" id="add-tranDate" style="width: 8rem;">
+                        <input type="date" id="add-tranDate" style="width: 8rem;" class="tdOkay">
                     </td>
                     <td>
-                        <input type="text" id="add-description" style="width: 12rem;">
+                        <input type="text" id="add-description" style="width: 12rem;" class="tdOkay">
                     </td>
                     <td>
-                        <input type="number" id="add-amount" placeholder="0.00" style="width: 4rem;" step="0.01">
+                        <input type="number" id="add-amount" placeholder="0.00" style="width: 4rem;" step="0.01" min="0.01" class="tdOkay">
                     </td>
                     <td>
-                        <select name="add-tranType" id="add-tranType">
+                        <select name="add-tranType" id="add-tranType" class="tdOkay">
                             <option value="">--Select</option>
                             <option value="Deposit">Deposit</option>
                             <option value="Withdrawl">Withdrawl</option>
                         </select>
                     </td>
                     <td>
-                        <input type="submit" value="Add">
+                        <input type="submit" value="Add" class="tdOkay">
                     </td>
                 </tr>
             </tbody>
@@ -56,7 +61,7 @@
             <input type="number" id="edit-checkNum">
             <input type="date" id="edit-tranDate">
             <input type="text" id="edit-description">
-            <input type="number" id="edit-amount" step="0.01">
+            <input type="number" id="edit-amount" step="0.01" min="0.01">
             <select name="edit-tranType" id="edit-tranType">
                 <option value="">--Select</option>
                 <option value="Deposit">Deposit</option>
@@ -67,7 +72,10 @@
         </form>
     </div>
 
-    <p id="counter"></p>
+    <p>
+        <span id="counterLit"></span>
+        <span id="currBalance"></span>
+    </p>
 
     <table>
         <tr>
