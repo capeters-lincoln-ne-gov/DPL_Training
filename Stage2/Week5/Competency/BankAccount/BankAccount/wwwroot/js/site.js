@@ -9,16 +9,19 @@ function getItems() {
 }
 
 function addItem() {
-
-    
-    
-    currBalance = parseFloat(document.getElementById("currBalance").innerHTML);
+    var currBalance = parseFloat(document.getElementById("currBalance").innerHTML);
     const addCheckNumTextbox = document.getElementById('add-checkNum');
     const addTrandDateTextbox = document.getElementById('add-tranDate');
     const addDescriptionTextbox = document.getElementById('add-description');
     const addAmountTextbox = document.getElementById('add-amount');
     const addTranTypeDropDown = document.getElementById('add-tranType');
     var tranType = addTranTypeDropDown.value.toLowerCase()
+
+    addCheckNumTextbox.className = "tdOkay";
+    addTrandDateTextbox.className = "tdOkay";
+    addDescriptionTextbox.className = "tdOkay";
+    addAmountTextbox.className = "tdOkay";
+    addTranTypeDropDown.className = "tdOkay";
      
     if (!validateCheckNum(parseInt(addCheckNumTextbox.value), tranType )) {
         addCheckNumTextbox.className = "tdErr";
@@ -49,7 +52,8 @@ function addItem() {
             alert("Please select a Transaction Type!");
             return false;
     }
-    
+
+
 
     var cNum = 0;
     if (addCheckNumTextbox.value > "") {
@@ -87,7 +91,7 @@ function addItem() {
             addTranTypeDropDown.selecteIndex = 0
         })
         .catch(error => console.error('Unable to add item.', error));
-}
+};
 
 
 function deleteItem(id) {
@@ -98,19 +102,29 @@ function deleteItem(id) {
     })
         .then(() => getItems())
         .catch(error => console.error('Unable to delete item.', error));
-}
+};
 
 function displayEditForm(id) {
     const item = entries.find(item => item.id === id);
 
     document.getElementById('edit-id').value = item.id;
-    document.getElementById('edit-checkNum').value = item.checkNum
-    document.getElementById('edit-tranDate').value = item.tranDate
-    document.getElementById('edit-description').value = item.description
-    document.getElementById('edit-amount').value = item.amount
-    document.getElementById('edit-tranType').value = item.tranType
+    document.getElementById('edit-checkNum').value = item.checkNum;
+    document.getElementById('edit-tranDate').value = item.tranDate;
+    document.getElementById('edit-description').value = item.description;
+    document.getElementById('edit-amount').value = item.amount;
+    document.getElementById('edit-tranType').value = item.tranType;
     document.getElementById('editForm').style.display = 'block';
-}
+    document.getElementById('addForm').style.display = 'none';
+
+    // Loop through table and mark the selected row 
+    var tbl = document.getElementById("tblBankAccountEntries");
+    for (var i = 0, row; row = tbl.rows[i]; i++) {
+        if (id == i) {
+            row.className = "selectedRow"
+        }
+    }
+
+ }
 
 function updateItem() {
     const itemId = document.getElementById('edit-id').value;
@@ -140,8 +154,39 @@ function updateItem() {
     return false;
 }
 
+//function closeInput() {
 function closeInput() {
+
+    //iterate through cells to find the id being updated.
+    var tbl = document.getElementById("tblEdit");
+    var id = -1;
+    for (var i = 0, row; row = tbl.rows[i]; i++) {
+        //iterate through rows
+        //rows would be accessed using the "row" variable assigned in the for loop
+        for (var j = 0, col; col = row.cells[j]; j++) {
+            if (row.cells[j].innerHTML.includes("edit-id") && row.cells[j].innerHTML.includes("value=")) {
+                let iHTML = row.cells[j].innerHTML;
+                let ix = iHTML.indexOf("value=") + 7
+                var ix2 = ix;
+                while (iHTML.substring(ix2, ix2 + 1) != "\"") {
+                    ix2++;
+                }                
+                id = parseInt(iHTML.substring(ix, ix2));
+            }
+
+            //iterate through columns
+            //columns would be accessed using the "col" variable assigned in the for loop
+        }
+    }
     document.getElementById('editForm').style.display = 'none';
+    document.getElementById('addForm').style.display = 'block';
+    tbl = document.getElementById("tblBankAccountEntries");
+    for (var i = 0, row; row = tbl.rows[i]; i++) {
+        if (id == i) {
+            row.className = "tableRow"
+        }
+    }
+
 }
 
 
@@ -247,26 +292,27 @@ function _displayItems(data) {
         deleteButton.setAttribute('onclick', `deleteItem(${item.id})`);
 
         let tr = tBody.insertRow();
+        tr.setAttribute("class", "tableRow");
 
         let td0 = tr.insertCell(0)
         let textCheckNum = document.createTextNode(item.checkNum)
-        td0.setAttribute("class", "tdOkay");
+        //td0.setAttribute("class", "tdOkay");
         td0.appendChild(textCheckNum)
 
         let td1 = tr.insertCell(1);
         let textTranDate = document.createTextNode(item.tranDate);
-        td1.setAttribute("class", "tdOkay");
+        //td1.setAttribute("class", "tdOkay");
         td1.appendChild(textTranDate);
 
         let td2 = tr.insertCell(2);
         let textDescription = document.createTextNode(item.description);
-        td2.setAttribute("class", "tdOkay");
+        //td2.setAttribute("class", "tdOkay");
         td2.appendChild(textDescription);
 
         let td3 = tr.insertCell(3);
         let textAmount = document.createTextNode(formatter.format(item.amount));
         /*let textAmount = formatter.format(item.amount);*/
-        td3.setAttribute("class", "tdOkay");
+        //td3.setAttribute("class", "tdOkay");
         td3.appendChild(textAmount);
         if (item.tranType == "Withdrawl") {
             totAmount += (item.amount * -1);
@@ -277,54 +323,17 @@ function _displayItems(data) {
 
         let td4 = tr.insertCell(4);
         let textTranType = document.createTextNode(item.tranType);
-        td4.setAttribute("class", "tdOkay");
+        //td4.setAttribute("class", "tdOkay");
         td4.appendChild(textTranType);
 
         let td5 = tr.insertCell(5);
-        td5.setAttribute("class", "tdOkay");
+        //td5.setAttribute("class", "tdOkay");
         td5.appendChild(editButton);
 
         let td6 = tr.insertCell(6);
-        td6.setAttribute("class", "tdOkay");
+        //td6.setAttribute("class", "tdOkay");
         td6.appendChild(deleteButton);
     });
-
-
-    /* =============== Footer Row ===================== */
-    //const tFooter = document.getElementById('footer');
-    //tFooter.innerHTML = '';
-    //let tr = tFooter.insertRow();
-    //let tf0 = tr.insertCell(0)
-    //let footerCheckNum = document.createTextNode("")
-    //td0.appendChild(footerCheckNum)
-
-    //let tf1 = tr.insertCell(1)
-    //let footerTranDate = document.createTextNode("")
-    //td1.appendChild(footerTranDate)
-
-    //let tf2 = tr.insertCell(2)
-    //let footerDescription = document.createTextNode("")
-    //td2.appendChild(footerDescription)
-
-    //let tf3 = tr.insertCell(3);
-    //let footerAmount = document.createTextNode(formatter.format(totAmount));
-    ///*let textAmount = formatter.format(item.amount);*/
-    //td3.appendChild(footerAmount);
-
-    //let tf4 = tr.insertCell(4)
-    //let footerDescription = document.createTextNode("")
-    //td4.appendChild(footerDescription)
-    //let tf5 = tr.insertCell(5)
-    //let footerDescription = document.createTextNode("")
-    //td5.appendChild(footerDescription)
-    //let tf6 = tr.insertCell(6)
-    //let footerDescription = document.createTextNode("")
-    //td6.appendChild(footerDescription)
-    /* =============== Footer Row ===================== */
-
-
-
-
 
     _displayCount(data.length, totAmount);
 

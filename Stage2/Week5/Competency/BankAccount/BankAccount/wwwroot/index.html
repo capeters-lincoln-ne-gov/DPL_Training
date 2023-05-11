@@ -6,93 +6,127 @@
     <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-    <h1><img src="bank.jpg" />
+    <h1>
+        <img src="bank.jpg" />
         <p>
             Bank Account Entries
         </p>
     </h1>
-    
-    <h3>Add</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <table>
+
+    <div id="addForm">
+        <h3>Add</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+            <table id="tblAdd">
+                <thead>
+                    <tr>
+                        <th>Check #</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Tran. Type</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="number" id="add-checkNum" placeholder="999" style="width: 4rem;" min="0" class="tdOkay">
+                        </td>
+                        <td>
+                            <input type="date" id="add-tranDate" style="width: 8rem;" class="tdOkay">
+                        </td>
+                        <td>
+                            <input type="text" id="add-description" style="width: 12rem;" class="tdOkay">
+                        </td>
+                        <td>
+                            <input type="number" id="add-amount" placeholder="0.00" style="width: 4rem;" step="0.01" min="0.01" class="tdOkay">
+                        </td>
+                        <td>
+                            <select name="add-tranType" id="add-tranType" class="tdOkay">
+                                <option value="">--Select</option>
+                                <option value="Deposit">Deposit</option>
+                                <option value="Withdrawl">Withdrawl</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="submit" value="Add" class="tdOkay">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+        <div id="editForm">
+            <h3>Edit</h3>
+            <form action="javascript:void(0);" onsubmit="updateItem()">
+                <table id="tblEdit">
+                    <thead>
+                        <tr>
+                            <th>Check #</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Tran. Type</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="hidden" id="edit-id">
+                                <input type="number" id="edit-checkNum" style="width: 4rem;" min="0"  class="tdOkay">
+                            </td>
+                            <td>
+                                <input type="date" id="edit-tranDate" style="width: 8rem;" class="tdOkay">
+                            </td>
+                            <td>
+                                <input type="text" id="edit-description" style="width: 12rem;" class="tdOkay">
+                            </td>
+                            <td>
+                                <input type="number" id="edit-amount" step="0.01" min="0.01" style="width: 4rem;" class="tdOkay">
+                            </td>
+                            <td>
+                                <select name="edit-tranType" id="edit-tranType" class="tdOkay">
+                                    <option value="">--Select</option>
+                                    <option value="Deposit">Deposit</option>
+                                    <option value="Withdrawl">Withdrawl</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="submit" value="Save" class="tdOkay">
+                                <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </form>
+        </div>
+
+        <p>
+            <span id="counterLit"></span>
+            <span id="currBalance"></span>
+        </p>
+
+        <table id="tblBankAccountEntries">
             <thead>
                 <tr>
                     <th>Check #</th>
                     <th>Date</th>
                     <th>Description</th>
                     <th>Amount</th>
-                    <th>Tran. Type</th>
+                    <th>Transaction Type</th>
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="number" id="add-checkNum" placeholder="999" style="width: 4rem;" min="0" class="tdOkay" >
-                    </td>
-                    <td>
-                        <input type="date" id="add-tranDate" style="width: 8rem;" class="tdOkay">
-                    </td>
-                    <td>
-                        <input type="text" id="add-description" style="width: 12rem;" class="tdOkay">
-                    </td>
-                    <td>
-                        <input type="number" id="add-amount" placeholder="0.00" style="width: 4rem;" step="0.01" min="0.01" class="tdOkay">
-                    </td>
-                    <td>
-                        <select name="add-tranType" id="add-tranType" class="tdOkay">
-                            <option value="">--Select</option>
-                            <option value="Deposit">Deposit</option>
-                            <option value="Withdrawl">Withdrawl</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="submit" value="Add" class="tdOkay">
-                    </td>
-                </tr>
-            </tbody>
+            <!--<tbody id="todos"></tbody>-->
+            <tbody id="entries"></tbody>
+            <!--<tfoot id="footer"></tfoot>-->
         </table>
-    </form>
 
-    <div id="editForm">
-        <h3>Edit</h3>
-        <form action="javascript:void(0);" onsubmit="updateItem()">
-            <input type="hidden" id="edit-id">
-            <input type="number" id="edit-checkNum">
-            <input type="date" id="edit-tranDate">
-            <input type="text" id="edit-description">
-            <input type="number" id="edit-amount" step="0.01" min="0.01">
-            <select name="edit-tranType" id="edit-tranType">
-                <option value="">--Select</option>
-                <option value="Deposit">Deposit</option>
-                <option value="Withdrawl">Withdrawl</option>
-            </select>
-            <input type="submit" value="Save">
-            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
-        </form>
-    </div>
-
-    <p>
-        <span id="counterLit"></span>
-        <span id="currBalance"></span>
-    </p>
-
-    <table>
-        <tr>
-            <th>Check #</th>
-            <th>Date</th>
-            <th>Description</th>
-            <th>Amount</th>
-            <th>Transaction Type</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <!--<tbody id="todos"></tbody>-->
-        <tbody id="entries"></tbody>
-        <tfoot id="footer"></tfoot>
-    </table>
-
-    <script src="js/site.js" asp-append-version="true"></script>
-    <script type="text/javascript">getItems();</script>
+        <script src="js/site.js" asp-append-version="true"></script>
+        <script type="text/javascript">getItems();</script>
 </body>
 </html>

@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week5\\Competency\\BankAccount\\BankAccount\\wwwroot\\bank.jpg",
+      "PackagePath": "staticwebassets\\bank.jpg"
+    },
+    {
       "Id": "C:\\Users\\dpdcap\\OneDrive - Information Services - City of Lincoln\\Desktop\\DPL_Training\\Stage2\\Week5\\Competency\\BankAccount\\BankAccount\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
